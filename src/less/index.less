@@ -1,0 +1,69 @@
+.nav-main {
+  float: left;
+  margin-right: 20px;
+}
+
+.detail {
+  &-count {
+    color: red;
+    margin-left: 20px;
+  }
+  &-clear-btn {
+    margin-left: 16px;
+  }
+}
+
+.info {
+  &-user-name {
+    margin-left: 25px;
+    margin-right: 20px;
+  }
+}
+
+.header {
+  margin-left: 110px;
+  min-height: 200px;
+  border: 1px solid green;
+
+}
+
+.footer {
+  margin-left: 110px;
+  padding-left: 10px;
+  height: 200px;
+  background-color: pink;
+}
+
+.rotate {
+  &-wrap {
+    overflow: hidden;
+    margin-left: 30px;
+    border: 3px solid #f6b;
+    animation: fadein 1s ease-in-out;
+    &:after {
+      display: block;
+      content: '';
+      height: 0;
+      clear: left;
+    }
+  }
+  &-box {
+    width: 302px;
+    height: 630px;
+    margin-left: 40px;
+    float: left;
+  }
+  &-link {
+    display: block;
+    transition: transform .5s linear;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
